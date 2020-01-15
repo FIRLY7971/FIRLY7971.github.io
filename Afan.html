@@ -1,8 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" class="chrome chrome79 desktop">
-<head> 
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Сайт преподавателей</title>
+    <title>Учитель</title>
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
     <link href="Education/Teacher/Style/StyleCommonTeacher.css" rel="stylesheet">
     <link href="Education/Teacher/Style/style.responsiveTeacher.css" rel="stylesheet">
@@ -13,6 +13,7 @@
     <script src="Education/Style/script.responsive.js"></script>
 
 
+    <script src="Style/BlackAndWhite/jquery.BlackAndWhite.js"></script>
 
     <meta name="description"><meta name="keywords"></head>
 <body>
@@ -67,96 +68,43 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'form1', ['
 //]]>
 </script>
 
+
             <nav class="nav desktop-nav">
                 <div class="nav-inner">
-                    <span></span><span></span><span></span></a><ul class="hmenu">
+                    <a href="#" class="menu-btn"><span></span><span></span><span></span></a><ul class="hmenu">
                         <li>
-                            <a id="lb1Default" class="lbMenu" href="https://firly7971.github.io/index.html">Главная</a>
+                            <a id="lb1Default" class="lbMenu" href="javascript:__doPostBack('lb1Default','')">Главная</a>
                         </li>
                         <li>
-                            <a id="lb132EduOrg" href="http://spedkoll.ru/sveden-common.html">Об учреждении</a>
+                            <a id="lb132EduOrg" href="javascript:__doPostBack('lb132EduOrg','')">Моя образовательная организация</a>
                         </li>
                         <li>
-                            <a id="lb4Kaleidoscope" href="https://zen.yandex.ru/smolensk-i.ru?clid=300&country_code=us&_csrf=c48607db8e10d99565ad4bcf6f92a589aa30fbd0-1554811362708&token=&from_page=other_page">Калейдоскоп событий</a></li>
+                            <a id="lb4Kaleidoscope" href="javascript:__doPostBack('lb4Kaleidoscope','')">Калейдоскоп событий</a></li>
                         <li>
-                            <a id="lb5Contacts" href="https://firly7971.github.io/contact.html">Контакты</a>
+                            <a id="lb6GuestBook" href="javascript:__doPostBack('lb6GuestBook','')">Гостевая книга</a>
+                        </li>
+                        <li>
+                            <a id="lb5Contacts" href="javascript:__doPostBack('lb5Contacts','')">Контакты</a>
                         </li>
                     </ul>
                 </div>
             </nav>
 
-            <!-- <header class="header">
+            <header class="header">
                 <table style="width: 100%">
                     <tbody><tr>
                         <td style="width: 50%" class="layout-cell">
 
-                            <div class="textblock objectLogo postTeacher" data-left="97.87%">
-
-                                <a href="#" target="_blank" class="bwWrapper">
-
-                                    <img alt="" src="Education/Teacher/Images/logo-Smol-Yelov.png" style="width: 175px;">
-                                </a>
-
-                            </div>
-
-                            <h1 class="headline fio" data-left="46.78%" style="text-align: center;">
-
-                                <span id="lbName"><p style="margin-bottom:10px;">Павлова</p><p>Марина Николаевна</p></span>
-                            </h1>
-
-                            <div class="shapes" style="margin-bottom: 10px;">
-                                <div class="textblock object489546606 postTeacher" data-left="46.29%">
-                                    <div class="object489546606-text-container">
-                                        <div class="object489546606-text">
-                                            <h2></h2>
-                                            <span id="lbNameLarge">Заведующая кафедрой</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            
-
-                            <div class="textblock objectBtns btnsAll">
-
-                                
-                                        <table style="margin: auto;">
-                                            <tbody><tr>
-                                                <td>
-                                                    <input type="submit" name="ctl10$btnEmail" value="" id="ctl10_btnEmail" class="btnEmail colorbutton" style="height:50px;width:52px;">
-                                                </td>
-                                                <td>
-                                                    <input type="submit" name="ctl10$btnVisible" value="" id="ctl10_btnVisible" class="btnVisible colorbutton" style="height:50px;width:52px;">
-                                                </td>
-                                                <td>
-                                                    <div id="ctl10_upBtnSearch">
-	
-                                                            <input type="submit" name="ctl10$btnSearch" value="" id="ctl10_btnSearch" class="btnSearch colorbutton" style="height:50px;width:52px;">
-                                                        
-</div>
-                                                </td>
-                                                <td>
-                                                    <input type="submit" name="ctl10$btnLogin" value="" id="ctl10_btnLogin" class="btnLoock colorbutton" style="height:50px;width:52px;">
-                                                </td>
-                                            </tr>
-                                        </tbody></table>
-                                    
-                            </div>
+                            <h1 class="headline fio" data-left="46.78%" style="text-align: center; left: 28.4%;">
+                                <span id="lbName"><p style="margin-bottom:10px;">Афанасьева Екатерина Вячеславовна</p></span>
+                            </h1> 
                         </td>
                         <td style="width: 50%" class="layout-cell">
-
-                            <div class="textblock objectImagePromo" data-left="50%">
-                                <a class="bwWrapper" style="z-index: 3; position: absolute; margin-top: 0; margin-left: 0;">
-                                    <img alt="" src="" class="slider-inner"></a>
-                                <a class="bwWrapper" style="z-index: 2;">
-                                    <img alt="" src="Education/Teacher/Images/promo-nikonenko.png" class="slider-inner"></a>
-                            </div>
                         </td>
                     </tr>
                 </tbody></table>
                 
-            </header> -->
+            </header>
 
             <div class="sheet clearfix">
 
@@ -237,82 +185,8 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'form1', ['
         <div class="content-layout-row">
             <div class="layout-cell layout-item-3 colorblock" style="width: 100%">
                 <p class="caleydoskop" style="color: rgb(255, 255, 255); font-size: 13px; font-weight: bold; text-align:center;">
-                    СПИСОК КАФЕДР<br>
+                    ИНФОРМАЦИЯ О ПРЕПОДАВАТЕЛЕ<br>
                 </p>
-            </div>
-        </div>
-    </div>
-    <div class="content-layout">
-        <div class="content-layout-row">
-            <table style="width:100%;padding-left: 10px; padding-right: 10px;">
-		<tbody><tr>
-			<td id="ctl14_wucHiDefault_tcHi" align="center" valign="top" style="width:100%;padding-right: 10px; padding-left: 10px;">
-            <br>
-            
-                    <table style="width: 100%">
-                        <tbody><tr>
-                            <td style="text-align: justify;">
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <img src="Images/calculator.png" alt="" style="font-size: 10px;">
-                                            <a href="https://firly7971.github.io/kf_estes-math.html">Кафедра естественно - математических наук</a>
-                                        </li><br>
-                                        <li>
-                                            <img src="Images/teacher.png" alt="">
-                                            <a href="https://firly7971.github.io/kf_shk_obraz.html">Кафедра дошкольного образования</a>
-                                        </li><br>
-                                        <li>
-                                            <img src="Images/playlist.png" alt="">
-                                            <a href="http://firly7971.github.io/kf_music_teor_disp.html">Кафедра музыкально - теоретических дисциплин</a>
-                                        </li><br>
-                                        <li>
-                                            <img src="Images/brain.png" alt="">
-                                            <a href="https://firly7971.github.io/kf_psiho_ped.html">Кафедра психолого - педагогических и общественных дисциплин</a>
-                                        </li><br>
-                                        <li>
-                                            <img src="Images/art.png" alt="">
-                                            <a href="https://firly7971.github.io/kf_design.html">Кафедра изобразительной деятельности и дизайна</a>
-                                        </li><br>
-                                        <li>
-                                            <img src="Images/linguistics.png" alt="">
-                                            <a href="https://firly7971.github.io/kf_lingvist.html">Кафедра лингвистических дисциплин</a>
-                                        </li><br>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody></table>
-                </td>
-		</tr>
-	</tbody></table>
-<div id="ctl14_wucHiDefault_upIdSite">
-		
-        <input type="hidden" name="ctl14$wucHiDefault$hfHiIdSite" id="ctl14_wucHiDefault_hfHiIdSite" value="128">
-        <input type="hidden" name="ctl14$wucHiDefault$hfPageBase" id="ctl14_wucHiDefault_hfPageBase" value="/Teacher.aspx">
-        <input type="hidden" name="ctl14$wucHiDefault$hfHiIdType" id="ctl14_wucHiDefault_hfHiIdType" value="3">
-    
-	</div>
-
-
-        </div>
-    </div>
-    <div class="content-layout">
-        <div class="content-layout-row">
-            <div class="layout-cell layout-item-2" style="width: 100%">
-                <p>
-                    <br>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="content-layout">
-        <div class="content-layout-row">
-            <div class="layout-cell layout-item-3 colorblock" style="width: 50%">
-                <p class="caleydoskop" style="font-size: 13px; font-weight: bold; color: #FFFFFF;">ВНИМАНИЕ!</p>
-            </div>
-            <div class="layout-cell layout-item-3 colorblock" style="width: 50%">
-                <p class="caleydoskop" style="font-size: 13px; font-weight: bold; color: #FFFFFF;">НОВОСТИ</p>
             </div>
         </div>
     </div>
@@ -328,98 +202,89 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'form1', ['
         <input type="hidden" name="ctl14$wucRSS1$hfIdGroup" id="ctl14_wucRSS1_hfIdGroup" value="2">
         <input type="hidden" name="ctl14$wucRSS1$hfIdOrg" id="ctl14_wucRSS1_hfIdOrg" value="128">
     
-	</div>
-
-                <p style="text-align: right;">
-                    <a id="ctl14_lbAllFocus" class="button colorblock" href="javascript:__doPostBack('ctl14$lbAllFocus','')">ПОДРОБНО...</a>
-                </p>
+    </div>
+    <img src="Coach/teach_7.jpg" alt="" style="width: 466px;">
             </div>
             <div class="layout-cell layout-item-5" style="width: 50%">
                 <br>
                 
-        <table style="width: 100%;">
-            <tbody><tr>
-                <td>
-                    <h3 style="margin-top: 0px; margin-bottom: 0px;">15.11.2018</h3>
-                </td>
-            </tr>
+    <table style="width: 100%;">
+            <tbody> 
             <tr>
                 <td style="text-align: left;">
-                    <h3 style="margin-top: 0px; margin-bottom: 0px; text-align: justify;"><a href="/Teacher.aspx?IdU=burceva&amp;Id=25485&amp;IdP=10">
-                        Экскурсия в Смоленск
-                    </a></h3>
+                    <p style="margin-top: 0px; margin-bottom: 0px; font-size: 20px;">
+                        <b>Окончила</b> Смоленский государственный университет по специальности "Информатика" в 2012 году.<br>
+                        ФГБОУ ВО "Смоленский государственный университет" в 2018 году по квалификации "Преподаватель математики".<br>
+                        Окончил Смоленский государственный университет по специальности "Информатика" в 2013 году. <br><br>
+                        <b>Работает в колледже</b> с 2007 года.<br>
+                    </p>
                 </td>
             </tr>
-            <tr>
-                <td style="text-align: left;">
-                    <p><b>У крепостной стены</b></p>
-                </td>
-            </tr>
-        </tbody></table>
+        </tbody>
+    </table>
         <br>
-    
+
         <table style="width: 100%;">
-            <tbody><tr>
-                <td>
-                    <h3 style="margin-top: 0px; margin-bottom: 0px;">10.11.2018</h3>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: left;">
-                    <h3 style="margin-top: 0px; margin-bottom: 0px; text-align: justify;"><a href="/Teacher.aspx?IdU=burceva&amp;Id=25462&amp;IdP=10">
-                        правила дорожного движения
-                    </a></h3>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: left;">
-                    <p><b>Правила дорожного движения</b></p>
-                </td>
-            </tr>
-        </tbody></table>
-        <br>
-    
+            <tbody>
+                <tr>
+                    <td style="text-align: left;">
+                        <p style="font-size: 20px;"><b>Преподаваемые дисциплины и МДК</b></p>
+                        <ul style="line-height: 2em; list-style-type: circle;">
+                            <li>МДК 01.04 ТОНКМ и методика преподавания математики</li>
+                            <li>Информатика</li>
+                            <li>Математика</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
         <table style="width: 100%;">
-            <tbody><tr>
-                <td>
-                    <h3 style="margin-top: 0px; margin-bottom: 0px;">06.11.2018</h3>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: left;">
-                    <h3 style="margin-top: 0px; margin-bottom: 0px; text-align: justify;"><a href="/Teacher.aspx?IdU=burceva&amp;Id=25480&amp;IdP=10">
-                        в музее сказок
-                    </a></h3>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: left;">
-                    <p><b>в музее сказок</b></p>
-                </td>
-            </tr>
-        </tbody></table>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3 style="margin-top: 0px; margin-bottom: 0px;">Заслуги</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <ul style="line-height: 2em; list-style-type: circle;">
+                            <li>Преподаватель высшей категории</li>
+                            <li>Грамота Администрации г. Смоленска (Управление образования и молодежной политики)</li>
+                            <li>Благодарственное письмо ОГАУ "Смоленский региональный центр оценки качества в образовании"</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <br>
-    
-
-
-<div id="ctl14_wucRSS_UpdatePanel1">
-		
-        <input type="hidden" name="ctl14$wucRSS$hfIdGroup" id="ctl14_wucRSS_hfIdGroup" value="1">
-        <input type="hidden" name="ctl14$wucRSS$hfIdOrg" id="ctl14_wucRSS_hfIdOrg" value="128">
-    
-	</div>
-
-                <p style="text-align: right;">
-                    <a id="ctl14_lbAllNews" class="button colorblock" href="javascript:__doPostBack('ctl14$lbAllNews','')">ВСЕ НОВОСТИ</a>
+    </div>
+</div>
+</div>
+    <div class="content-layout">
+        <div class="content-layout-row">
+            <div class="layout-cell layout-item-2" style="width: 100%">
+                <p>
+                    <br>
                 </p>
             </div>
         </div>
     </div>
-    <br>
+
+                
+
+
+
+    
+       
+    
+
+
+
     <div class="content-layout">
         <div class="content-layout-row">
             <div class="layout-cell layout-item-3 colorblock" style="width: 100%">
-                <p class="caleydoskop" style="color: rgb(255, 255, 255); font-size: 13px; font-weight: bold;">
+                <p class="caleydoskop" style="color: rgb(255, 255, 255); font-size: 13px; font-weight: bold; text-align: center;">
                     ОФИЦИАЛЬНЫЕ ИНФОРМАЦИОННЫЕ ИНТЕРНЕТ - РЕСУРСЫ<br>
                 </p>
             </div>
@@ -555,6 +420,57 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'form1', ['
                 </div>
 
             </div>
+
+            <footer class="footer">
+                <div class="footer-inner">
+                    <div class="content-layout">
+                        <div class="content-layout-row footerframe">
+                            <div class="layout-cell layout-item-0" style="width: 50%">
+                                <table style="width: 100%">
+                                    <tbody><tr>
+                                        <td style="width: 40%" class="bwWrapper">
+                                            <img width="198" height="107" alt="" src="Education/Footer/Logo_setka.png" style="float: left;">
+                                        </td>
+                                        <td style="width: 60%"><span style="font-family: Arial; font-size: 10px;">Сайт является структурным модулем электронной информационно-аналитической системы "Регион",<span style="text-align: left;">&nbsp;развернутой в информационной системе<br>
+                                            "Национальная облачная платформа<br>
+                                            ОАО "Ростелеком",&nbsp;аттестованной на соответствие требованиям безопасности информации,<br>
+                                            предъявляемым к информационным<br>
+                                            системам обработки персональных данных</span></span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+
+                            </div>
+                            <div class="layout-cell layout-item-0" style="width: 50%">
+                                <table id="tblInformer" style="width:100%;">
+	<tbody><tr>
+		<td id="tcInformer" align="center"></td>
+	</tr>
+</tbody></table>
+                                <p><span style="font-family: Arial; text-align: left;">© Орешкова О.А., 2013-2016 г. Все права защищены</span></p>
+                                <p>
+                                    <span style="font-family: Arial;"><span>+8 (481) 267-61-66</span><br>
+                                    </span>
+                                </p>
+                                <p><span style="font-family: Arial;">mail@region-systems.ru</span></p>
+                                <p><span style="color: rgb(41, 125, 194); font-size: 13px; text-align: left;"></span></p>
+                                <p><span style="color: rgb(41, 125, 194); font-size: 13px; text-align: left;"></span></p>
+                                <p><span style="color: rgb(41, 125, 194); font-size: 13px; text-align: left;"></span></p>
+                                <p>
+                                    <br>
+                                </p>
+                                <p>
+                                    <a class="bwWrapper" href="https://www.youtube.com/channel/UC3lsbaWPztdN873nozpu4Gw" target="_blank">
+                                        <img width="99" height="22" alt="" src="Education/Footer/Ikonki.png"></a><br>
+                                </p>
+                                <p class="bwWrapper">
+                                    <img width="30" height="30" alt="" src="Education/Footer/Soglasenie.png">&nbsp;&nbsp;Пользовательское соглашение
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         
 
     
@@ -570,9 +486,8 @@ Sys.Application.add_init(function() {
 //]]>
 </script>
 </form>
+    <form id="formYm" action="https://money.yandex.ru/eshop.xml" method="post"></form>
 
 
 
-<div id="resp"><div id="resp-m"></div><div id="resp-t"></div></div>
-</body>
-</html>
+<div id="resp"><div id="resp-m"></div><div id="resp-t"></div></div></body></html>
